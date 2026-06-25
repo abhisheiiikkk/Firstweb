@@ -20,9 +20,9 @@ button{
 }
 #keeper{
   position:absolute;
-  bottom:50px;
-  left:110px;
-  width:120px;
+  bottom:0px;
+  left:120px;
+  width:100px;
   height:auto;
 }
 
