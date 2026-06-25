@@ -43,3 +43,30 @@ function shoot(side){
    },500);
  }
 }
+let soundEnabled = true;
+
+function showSettings(){
+
+ document.getElementById("home").style.display="none";
+ document.getElementById("settings").style.display="block";
+
+}
+
+function closeSettings(){
+
+ document.getElementById("settings").style.display="none";
+ document.getElementById("home").style.display="block";
+
+}
+
+function toggleSound(){
+
+ soundEnabled = !soundEnabled;
+
+ if(soundEnabled){
+   alert("🔊 Sound ON");
+ }else{
+   alert("🔇 Sound OFF");
+ }
+
+}
