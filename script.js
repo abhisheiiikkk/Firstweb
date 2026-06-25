@@ -1,0 +1,27 @@
+body{
+  text-align:center;
+  font-family:Arial;
+  background:#0a7d2c;
+  color:white;
+}
+
+button{
+  padding:12px 20px;
+  margin:10px;
+  font-size:18px;
+}
+
+.goal{
+  width:320px;
+  height:180px;
+  border:5px solid white;
+  margin:20px auto;
+  position:relative;
+}
+
+#keeper{
+  position:absolute;
+  bottom:10px;
+  left:140px;
+  font-size:40px;
+}
