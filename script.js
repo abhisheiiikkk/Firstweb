@@ -82,3 +82,14 @@ function closePlayers(){
  document.getElementById("home").style.display="block";
 
 }
+function goHome(){
+
+ document.getElementById("game").style.display="none";
+
+ document.getElementById("players").style.display="none";
+
+ document.getElementById("settings").style.display="none";
+
+ document.getElementById("home").style.display="block";
+
+}
