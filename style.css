@@ -57,10 +57,10 @@ button{
 
 #settingsBtn{
   position:absolute;
-  top:62%;
-  left:72%;
+  top:72%;
+  left:74%;
   transform:translate(-50%,-50%);
-  width:200px;
-  height:110px;
+  width:180px;
+  height:70px;
   opacity:0.4;
 }
