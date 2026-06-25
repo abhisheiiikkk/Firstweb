@@ -50,8 +50,8 @@ button{
   top:68%;
   left:27%;
   transform:translate(-50%,-50%);
-  width:180px;
-  height:80px;
+  width:280px;
+  height:100px;
   opacity:0.4;
 }
 
@@ -60,7 +60,7 @@ button{
   top:68%;
   left:75%;
   transform:translate(-50%,-50%);
-  width:180px;
-  height:70px;
+  width:250px;
+  height:90px;
   opacity:0.4;
 }
