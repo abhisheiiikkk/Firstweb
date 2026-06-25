@@ -122,5 +122,17 @@ ball.addEventListener("touchend", function(e){
   let dx = endX - startX;
   let dy = startY - endY;
 
-  console.log("Swipe:", dx, dy);
+  if (dy > 50) {
+
+  if (dx < -40) {
+    shoot("left");
+  }
+  else if (dx > 40) {
+    shoot("right");
+  }
+  else {
+    shoot("center");
+  }
+
+}
 }, { passive: false });
