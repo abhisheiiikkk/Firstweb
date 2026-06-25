@@ -18,13 +18,14 @@ button{
   margin:20px auto;
   position:relative;
 }
-
 #keeper{
   position:absolute;
-  bottom:10px;
+  bottom:180px;
   left:140px;
-  font-size:40px;
+  width:80px;
+  height:auto;
 }
+
 
 #home{
   position:relative;
