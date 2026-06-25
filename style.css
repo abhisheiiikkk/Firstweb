@@ -58,9 +58,9 @@ button{
 #settingsBtn{
   position:absolute;
   top:68%;
-  left:75%;
+  left:73%;
   transform:translate(-50%,-50%);
-  width:250px;
+  width:280px;
   height:170px;
   opacity:0.4;
 }
