@@ -23,49 +23,22 @@ function shoot(side){
  if(shots<=0) return;
 const ball = document.getElementById("ball");
 
-ball.style.transition = "all 0.5s ease";
+const ball = document.getElementById("ball");
+
+ball.style.transition = "transform 0.6s ease";
 
 if (side === "left") {
-  ball.style.left = "30%";
-  ball.style.bottom = "420px";
+  ball.style.transform = "translate(-180px,-350px) scale(0.5)";
 }
 else if (side === "center") {
-  ball.style.left = "50%";
-  ball.style.bottom = "420px";
+  ball.style.transform = "translate(0px,-350px) scale(0.5)";
 }
 else {
-  ball.style.left = "70%";
-  ball.style.bottom = "420px";
-}
- let keeper;
-
-if (Math.random() < 0.4) {
-  // 40% chance of save
-  keeper = side;
-} else {
-  // 60% chance of goal
-  let dirs = ["left","center","right"].filter(d => d !== side);
-  keeper = dirs[Math.floor(Math.random() * dirs.length)];
+  ball.style.transform = "translate(180px,-350px) scale(0.5)";
 }
 
- document.getElementById("keeper").style.left =
- keeper==="left" ? "60px" :
- keeper==="center" ? "110px" : "160px";
-
- if(side!==keeper){
-   goals++;
-   document.getElementById("result").innerText="⚽ GOAL!";
- }else{
-   document.getElementById("result").innerText="🧤 SAVED!";
- }
-
- shots--;
-
- document.getElementById("score").innerText=goals;
- document.getElementById("shots").innerText=shots;
 setTimeout(() => {
-  ball.style.left = "50%";
-  ball.style.bottom = "120px";
+  ball.style.transform = "translateX(-50%)";
 }, 600);
  if(shots===0){
    setTimeout(()=>{
