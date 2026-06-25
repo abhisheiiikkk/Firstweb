@@ -88,7 +88,7 @@ button{
   left:18%;
   width:120px;
   height:220px;
-  opacity:0;
+  opacity:0.4;
 }
 
 #messiBtn{
@@ -97,7 +97,7 @@ button{
   left:41%;
   width:120px;
   height:220px;
-  opacity:0;
+  opacity:0.4;
 }
 
 #neymarBtn{
@@ -106,7 +106,7 @@ button{
   left:64%;
   width:120px;
   height:220px;
-  opacity:0;
+  opacity:0.4;
 }
 #players button:last-child{
   position:absolute;
