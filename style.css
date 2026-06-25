@@ -37,31 +37,30 @@ button{
 
 #startBtn{
   position:absolute;
-  top:48%;
+  top:49%;
   left:50%;
-  transform:translateX(-50%);
-  width:420px;
-  height:180px;
-  opacity:0.3;
+  transform:translate(-50%,-50%);
+  width:380px;
+  height:170px;
+  opacity:0.4;
 }
-
 
 #playerBtn{
   position:absolute;
-  top:70%;
-  left:29%;
-  transform:translateX(-50%);
-  width:260px;
-  height:160px;
-  opacity:0.3;
+  top:67%;
+  left:28%;
+  transform:translate(-50%,-50%);
+  width:250px;
+  height:140px;
+  opacity:0.4;
 }
 
 #settingsBtn{
   position:absolute;
-  top:70%;
-  left:71%;
-  transform:translateX(-50%);
-  width:260px;
-  height:160px;
-  opacity:0.3;
+  top:67%;
+  left:72%;
+  transform:translate(-50%,-50%);
+  width:250px;
+  height:140px;
+  opacity:0.4;
 }
