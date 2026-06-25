@@ -64,3 +64,11 @@ button{
   height:170px;
   opacity:0;
 }
+#players{
+  position:relative;
+  background-image:url("BD30B1BB-5594-48F4-975E-530A0EBF1EF5.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  min-height:100vh;
+}
