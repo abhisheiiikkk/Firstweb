@@ -101,3 +101,26 @@ function goHome(){
  document.getElementById("home").style.display="block";
 
 }
+const ball = document.getElementById("ball");
+
+let startX = 0;
+let startY = 0;
+
+ball.addEventListener("touchstart", function(e){
+  e.preventDefault();
+
+  startX = e.touches[0].clientX;
+  startY = e.touches[0].clientY;
+}, { passive: false });
+
+ball.addEventListener("touchend", function(e){
+  e.preventDefault();
+
+  let endX = e.changedTouches[0].clientX;
+  let endY = e.changedTouches[0].clientY;
+
+  let dx = endX - startX;
+  let dy = startY - endY;
+
+  console.log("Swipe:", dx, dy);
+}, { passive: false });
