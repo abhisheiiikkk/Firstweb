@@ -20,7 +20,7 @@ button{
 }
 #keeper{
   position:absolute;
-  bottom:0px;
+  bottom:-740px;
   left:110px;
   width:90px;
   height:auto;
