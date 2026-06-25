@@ -137,7 +137,7 @@ button{
 }
 #keeper{
   position:absolute;
-  bottom:0;
+  bottom:-100;
   left:110px;
   width:90px;
   height:auto;
