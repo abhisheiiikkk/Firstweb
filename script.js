@@ -1,27 +1,45 @@
-body{
-  text-align:center;
-  font-family:Arial;
-  background:#0a7d2c;
-  color:white;
+let goals=0;
+let shots=5;
+
+function showPlayers(){
+ document.getElementById("home").style.display="none";
+ document.getElementById("players").style.display="block";
 }
 
-button{
-  padding:12px 20px;
-  margin:10px;
-  font-size:18px;
+function startGame(player){
+ document.getElementById("players").style.display="none";
+ document.getElementById("game").style.display="block";
+
+ document.getElementById("playerName").innerText=player;
 }
 
-.goal{
-  width:320px;
-  height:180px;
-  border:5px solid white;
-  margin:20px auto;
-  position:relative;
-}
+function shoot(side){
 
-#keeper{
-  position:absolute;
-  bottom:10px;
-  left:140px;
-  font-size:40px;
+ if(shots<=0) return;
+
+ let dirs=["left","center","right"];
+ let keeper=dirs[Math.floor(Math.random()*3)];
+
+ document.getElementById("keeper").style.left=
+ keeper==="left"?"40px":
+ keeper==="center"?"140px":"240px";
+
+ if(side!==keeper){
+   goals++;
+   document.getElementById("result").innerText="⚽ GOAL!";
+ }else{
+   document.getElementById("result").innerText="🧤 SAVED!";
+ }
+
+ shots--;
+
+ document.getElementById("score").innerText=goals;
+ document.getElementById("shots").innerText=shots;
+
+ if(shots===0){
+   setTimeout(()=>{
+     alert("Game Over! Goals: "+goals);
+     location.reload();
+   },500);
+ }
 }
