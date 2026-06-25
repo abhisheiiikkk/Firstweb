@@ -148,7 +148,7 @@ button{
   bottom:40px;
   left:50%;
   transform:translateX(-50%);
-  width:20px;
+  width:50px;
   height:auto;
   z-index:10;
   transition:all 0.4s ease;
