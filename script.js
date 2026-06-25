@@ -106,7 +106,28 @@ const ball = document.getElementById("ball");
 let startX = 0;
 let startY = 0;
 
+ball.addEventListener("touchstart", function(e){
+  e.preventDefault();
+  startX = e.touches[0].clientX;
+  startY = e.touches[0].clientY;
+}, { passive: false });
+
 ball.addEventListener("touchend", function(e){
   e.preventDefault();
-  alert("Swipe detected");
+
+  let endX = e.changedTouches[0].clientX;
+  let endY = e.changedTouches[0].clientY;
+
+  let dx = endX - startX;
+  let dy = startY - endY;
+
+  if (dy > 30) {
+    if (dx < -30) {
+      shoot("left");
+    } else if (dx > 30) {
+      shoot("right");
+    } else {
+      shoot("center");
+    }
+  }
 }, { passive: false });
