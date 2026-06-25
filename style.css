@@ -154,3 +154,12 @@ button{
   z-index:10;
   transition:all 0.4s ease;
 } 
+#game{
+  touch-action: none;
+  overflow: hidden;
+}
+
+#ball{
+  touch-action: none;
+  user-select: none;
+}
