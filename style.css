@@ -135,3 +135,23 @@ button{
   background-repeat:no-repeat;
   min-height:100vh;
 }
+@keyframes keeperMove {
+  0% {
+    left: 70px;
+  }
+  50% {
+    left: 130px;
+  }
+  100% {
+    left: 190px;
+  }
+}
+
+#keeper{
+  position:absolute;
+  bottom:0;
+  left:110px;
+  width:90px;
+  height:auto;
+  animation: keeperMove 2s infinite alternate ease-in-out;
+}
