@@ -73,3 +73,44 @@ button{
   background-repeat:no-repeat;
   min-height:100vh;
 }
+#players{
+  position:relative;
+  background-image:url("BD30B1BB-5594-48F4-975E-530A0EBF1EF5.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  min-height:100vh;
+}
+
+#ronaldoBtn{
+  position:absolute;
+  top:38%;
+  left:18%;
+  width:120px;
+  height:220px;
+  opacity:0;
+}
+
+#messiBtn{
+  position:absolute;
+  top:38%;
+  left:41%;
+  width:120px;
+  height:220px;
+  opacity:0;
+}
+
+#neymarBtn{
+  position:absolute;
+  top:38%;
+  left:64%;
+  width:120px;
+  height:220px;
+  opacity:0;
+}
+#players button:last-child{
+  position:absolute;
+  top:20px;
+  left:20px;
+  opacity:1;
+}
