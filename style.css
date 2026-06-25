@@ -25,3 +25,15 @@ button{
   left:140px;
   font-size:40px;
 }
+#home{
+  background-image:url("IMG_4283.jpeg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  min-height:100vh;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
