@@ -1,3 +1,54 @@
-index.html
-style.css
-script.js
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FIFA WORLD CUP GAME</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="home">
+  <h1>🏆 FIFA WORLD CUP GAME</h1>
+
+  <div class="leaderboard">
+    <h2>Leaderboard</h2>
+    <p>🥇 Ronaldo - 120</p>
+    <p>🥈 Messi - 110</p>
+    <p>🥉 Neymar - 95</p>
+    <p>4️⃣ Mbappé - 90</p>
+  </div>
+
+  <button onclick="showPlayers()">PLAY NOW</button>
+</div>
+
+<div id="players" style="display:none;">
+  <h2>Select Player</h2>
+
+  <button onclick="startGame('Ronaldo')">Ronaldo</button>
+  <button onclick="startGame('Messi')">Messi</button>
+  <button onclick="startGame('Neymar')">Neymar</button>
+  <button onclick="startGame('Mbappe')">Mbappe</button>
+</div>
+
+<div id="game" style="display:none;">
+  <h2 id="playerName"></h2>
+
+  <h3>Goals: <span id="score">0</span></h3>
+  <h3>Shots Left: <span id="shots">5</span></h3>
+
+  <div class="goal">
+    <div id="keeper">🧤</div>
+  </div>
+
+  <div class="ball-area">
+    <button onclick="shoot('left')">LEFT</button>
+    <button onclick="shoot('center')">CENTER</button>
+    <button onclick="shoot('right')">RIGHT</button>
+  </div>
+
+  <h2 id="result"></h2>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
