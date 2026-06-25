@@ -126,3 +126,11 @@ button{
   left:20px;
   opacity:1;
 }
+#game{
+  position:relative;
+  background-image:url("IMG_4316.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  min-height:100vh;
+}
