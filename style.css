@@ -37,3 +37,35 @@ button{
   justify-content:center;
   align-items:center;
 }
+/* START */
+#startBtn{
+  position:absolute;
+  top:58%;
+  left:50%;
+  transform:translateX(-50%);
+  width:220px;
+  height:55px;
+  opacity:0.3;
+}
+
+/* PLAYER SELECT */
+#playerBtn{
+  position:absolute;
+  top:67%;
+  left:50%;
+  transform:translateX(-50%);
+  width:220px;
+  height:55px;
+  opacity:0.3;
+}
+
+/* SETTINGS */
+#settingsBtn{
+  position:absolute;
+  top:76%;
+  left:50%;
+  transform:translateX(-50%);
+  width:220px;
+  height:55px;
+  opacity:0.3;
+}
