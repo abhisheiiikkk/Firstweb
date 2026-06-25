@@ -139,7 +139,7 @@ button{
   position:absolute;
   bottom:-720px;
   left:110px;
-  width:200px;
+  width:190px;
   height:auto;
   transition:left 0.4s ease;
 }
