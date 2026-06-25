@@ -86,7 +86,7 @@ button{
   position:absolute;
   top:38%;
   left:8%;
-  width:120px;
+  width:220px;
   height:380px;
   opacity:0.4;
 }
@@ -94,7 +94,7 @@ button{
 #messiBtn{
   position:absolute;
   top:38%;
-  left:25%;
+  left:30%;
   width:120px;
   height:220px;
   opacity:0.4;
