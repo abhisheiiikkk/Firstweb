@@ -63,7 +63,10 @@ if (Math.random() < 0.4) {
 
  document.getElementById("score").innerText=goals;
  document.getElementById("shots").innerText=shots;
-
+setTimeout(() => {
+  ball.style.left = "50%";
+  ball.style.bottom = "120px";
+}, 600);
  if(shots===0){
    setTimeout(()=>{
      alert("Game Over! Goals: "+goals);
