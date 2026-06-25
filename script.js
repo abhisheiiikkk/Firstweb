@@ -75,3 +75,10 @@ function toggleSound(){
  }
 
 }
+function closePlayers(){
+
+ document.getElementById("players").style.display="none";
+
+ document.getElementById("home").style.display="block";
+
+}
