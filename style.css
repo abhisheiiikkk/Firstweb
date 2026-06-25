@@ -47,7 +47,7 @@ button{
 
 #playerBtn{
   position:absolute;
-  top:69%;
+  top:68%;
   left:27%;
   transform:translate(-50%,-50%);
   width:180px;
@@ -57,7 +57,7 @@ button{
 
 #settingsBtn{
   position:absolute;
-  top:69%;
+  top:68%;
   left:75%;
   transform:translate(-50%,-50%);
   width:180px;
