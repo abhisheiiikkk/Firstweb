@@ -21,7 +21,22 @@ function startGame(player){
 function shoot(side){
 
  if(shots<=0) return;
+const ball = document.getElementById("ball");
 
+ball.style.transition = "all 0.5s ease";
+
+if (side === "left") {
+  ball.style.left = "30%";
+  ball.style.bottom = "420px";
+}
+else if (side === "center") {
+  ball.style.left = "50%";
+  ball.style.bottom = "420px";
+}
+else {
+  ball.style.left = "70%";
+  ball.style.bottom = "420px";
+}
  let keeper;
 
 if (Math.random() < 0.4) {
