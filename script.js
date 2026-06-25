@@ -22,12 +22,20 @@ function shoot(side){
 
  if(shots<=0) return;
 
- let dirs=["left","center","right"];
- let keeper=dirs[Math.floor(Math.random()*3)];
+ let keeper;
 
- document.getElementById("keeper").style.left=
- keeper==="left"?"40px":
- keeper==="center"?"140px":"240px";
+if (Math.random() < 0.4) {
+  // 40% chance of save
+  keeper = side;
+} else {
+  // 60% chance of goal
+  let dirs = ["left","center","right"].filter(d => d !== side);
+  keeper = dirs[Math.floor(Math.random() * dirs.length)];
+}
+
+ document.getElementById("keeper").style.left =
+ keeper==="left" ? "60px" :
+ keeper==="center" ? "110px" : "160px";
 
  if(side!==keeper){
    goals++;
