@@ -7,10 +7,15 @@ function showPlayers(){
 }
 
 function startGame(player){
+
+ document.getElementById("home").style.display="none";
+
  document.getElementById("players").style.display="none";
+
  document.getElementById("game").style.display="block";
 
  document.getElementById("playerName").innerText=player;
+
 }
 
 function shoot(side){
