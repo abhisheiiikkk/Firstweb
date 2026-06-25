@@ -26,7 +26,14 @@ button{
   font-size:40px;
 }
 #home{
-  p
+  position:relative;
+  background-image:url("./IMG_4283.jpeg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  min-height:100vh;
+}
+  
 /* START */
 #startBtn{
   position:absolute;
