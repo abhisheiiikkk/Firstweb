@@ -1,74 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Abhi Penalty Game</title>
-<style>
-body{
-    font-family:Arial;
-    text-align:center;
-    background:#0a7d2c;
-    color:white;
-}
-.goal{
-    width:300px;
-    height:150px;
-    border:5px solid white;
-    margin:20px auto;
-    position:relative;
-}
-.keeper{
-    width:50px;
-    height:50px;
-    background:red;
-    position:absolute;
-    bottom:10px;
-    left:125px;
-}
-button{
-    padding:10px 20px;
-    margin:5px;
-    font-size:18px;
-}
-</style>
+<meta charset="UTF-8">
+<title>FIFA WORLD CUP GAME</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>⚽ Abhi Penalty Game ⚽</h1>
+<div id="home">
+  <h1>🏆 FIFA WORLD CUP GAME</h1>
 
-<div class="goal">
-    <div class="keeper" id="keeper"></div>
+  <div class="leaderboard">
+    <h2>Leaderboard</h2>
+    <p>🥇 Ronaldo - 120</p>
+    <p>🥈 Messi - 110</p>
+    <p>🥉 Neymar - 95</p>
+    <p>4️⃣ Mbappé - 90</p>
+  </div>
+
+  <button onclick="showPlayers()">PLAY NOW</button>
 </div>
 
-<h2 id="result">Choose a direction</h2>
-<h3>Score: <span id="score">0</span></h3>
+<div id="players" style="display:none;">
+  <h2>Select Player</h2>
 
-<button onclick="shoot('left')">⬅ Left</button>
-<button onclick="shoot('center')">⬆ Center</button>
-<button onclick="shoot('right')">➡ Right</button>
+  <button onclick="startGame('Ronaldo')">Ronaldo</button>
+  <button onclick="startGame('Messi')">Messi</button>
+  <button onclick="startGame('Neymar')">Neymar</button>
+  <button onclick="startGame('Mbappe')">Mbappe</button>
+</div>
 
-<script>
-let score = 0;
+<div id="game" style="display:none;">
+  <h2 id="playerName"></h2>
 
-function shoot(direction){
-    const positions = ['left','center','right'];
-    const keeperMove =
-      positions[Math.floor(Math.random()*3)];
+  <h3>Goals: <span id="score">0</span></h3>
+  <h3>Shots Left: <span id="shots">5</span></h3>
 
-    document.getElementById('keeper').style.left =
-      keeperMove === 'left' ? '20px' :
-      keeperMove === 'center' ? '125px' : '230px';
+  <div class="goal">
+    <div id="keeper">🧤</div>
+  </div>
 
-    if(direction === keeperMove){
-        document.getElementById('result').innerText =
-        '❌ Saved by Keeper!';
-    } else {
-        score++;
-        document.getElementById('score').innerText = score;
-        document.getElementById('result').innerText =
-        '⚽ GOAL!';
-    }
-}
-</script>
+  <div class="ball-area">
+    <button onclick="shoot('left')">LEFT</button>
+    <button onclick="shoot('center')">CENTER</button>
+    <button onclick="shoot('right')">RIGHT</button>
+  </div>
 
+  <h2 id="result"></h2>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
