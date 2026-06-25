@@ -25,6 +25,7 @@ button{
   left:140px;
   font-size:40px;
 }
+
 #home{
   position:relative;
   background-image:url("./IMG_4283.jpeg");
@@ -33,8 +34,7 @@ button{
   background-repeat:no-repeat;
   min-height:100vh;
 }
-  
-/* START */
+
 #startBtn{
   position:absolute;
   top:53%;
