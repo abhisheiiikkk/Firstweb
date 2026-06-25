@@ -14,7 +14,7 @@ button{
 .goal{
   width:320px;
   height:180px;
-  border:5px solid white;
+  border:none;
   margin:20px auto;
   position:relative;
 }
