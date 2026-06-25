@@ -30,32 +30,30 @@ button{
 /* START */
 #startBtn{
   position:absolute;
-  top:58%;
+  top:53%;
   left:50%;
   transform:translateX(-50%);
-  width:220px;
-  height:55px;
+  width:260px;
+  height:90px;
   opacity:0.3;
 }
 
-/* PLAYER SELECT */
 #playerBtn{
   position:absolute;
-  top:67%;
-  left:50%;
+  top:72%;
+  left:31%;
   transform:translateX(-50%);
   width:220px;
-  height:55px;
+  height:120px;
   opacity:0.3;
 }
 
-/* SETTINGS */
 #settingsBtn{
   position:absolute;
-  top:76%;
-  left:50%;
+  top:72%;
+  left:69%;
   transform:translateX(-50%);
   width:220px;
-  height:55px;
+  height:120px;
   opacity:0.3;
 }
