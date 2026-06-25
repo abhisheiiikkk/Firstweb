@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Abhi's Website</title>
-  <style>
-    body{
-      background:#0f172a;
-      color:white;
-      text-align:center;
-      font-family:Arial,sans-serif;
-      padding-top:50px;
-    }
-
-    img{
-      width:150px;
-      height:150px;
-      border-radius:50%;
-    }
-
-    .box{
-      max-width:500px;
-      margin:auto;
-      background:#1e293b;
-      padding:20px;
-      border-radius:15px;
-    }
-
-    button{
-      background:#22c55e;
-      color:white;
-      border:none;
-      padding:12px 20px;
-      border-radius:10px;
-      font-size:16px;
-      cursor:pointer;
-    }
-  </style>
+<title>Abhi Penalty Game</title>
+<style>
+body{
+    font-family:Arial;
+    text-align:center;
+    background:#0a7d2c;
+    color:white;
+}
+.goal{
+    width:300px;
+    height:150px;
+    border:5px solid white;
+    margin:20px auto;
+    position:relative;
+}
+.keeper{
+    width:50px;
+    height:50px;
+    background:red;
+    position:absolute;
+    bottom:10px;
+    left:125px;
+}
+button{
+    padding:10px 20px;
+    margin:5px;
+    font-size:18px;
+}
+</style>
 </head>
-
 <body>
 
-<div class="box">
-  <h1>👋 Hi, I'm Abhi</h1>
+<h1>⚽ Abhi Penalty Game ⚽</h1>
 
-  <p>Welcome to my first website!</p>
-
-  <button onclick="alert('Thanks for visiting my website ❤️')">
-    Click Me
-  </button>
+<div class="goal">
+    <div class="keeper" id="keeper"></div>
 </div>
+
+<h2 id="result">Choose a direction</h2>
+<h3>Score: <span id="score">0</span></h3>
+
+<button onclick="shoot('left')">⬅ Left</button>
+<button onclick="shoot('center')">⬆ Center</button>
+<button onclick="shoot('right')">➡ Right</button>
+
+<script>
+let score = 0;
+
+function shoot(direction){
+    const positions = ['left','center','right'];
+    const keeperMove =
+      positions[Math.floor(Math.random()*3)];
+
+    document.getElementById('keeper').style.left =
+      keeperMove === 'left' ? '20px' :
+      keeperMove === 'center' ? '125px' : '230px';
+
+    if(direction === keeperMove){
+        document.getElementById('result').innerText =
+        '❌ Saved by Keeper!';
+    } else {
+        score++;
+        document.getElementById('score').innerText = score;
+        document.getElementById('result').innerText =
+        '⚽ GOAL!';
+    }
+}
+</script>
 
 </body>
 </html>
