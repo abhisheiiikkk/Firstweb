@@ -135,13 +135,17 @@ button{
   background-repeat:no-repeat;
   min-height:100vh;
 }
+
 #keeper{
   position:absolute;
-  bottom:-730px;
-  left:80px;
+  top:62%;
+  left:50%;
   width:190px;
   height:auto;
+
+  transform:translate(-50%, -50%);
   transition:transform 0.4s ease;
+  z-index:5;
 }
 #ball{
   position:absolute;
