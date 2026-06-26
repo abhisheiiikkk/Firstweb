@@ -81,7 +81,7 @@ else if (saveSide === "center") {
   keeper.style.transform = "translateX(0)";
 }
 else {
-  keeper.style.transform = "translateX(250px)";
+  keeper.style.transform = "translateX(300px)";
 }
 
   setTimeout(()=>{
