@@ -55,12 +55,14 @@ function shoot(side){
   ball.style.transition = "transform 0.6s ease";
 
   if(side==="left"){
-    ball.style.transform="translate(-180px,-350px) scale(0.5)";
-  }else if(side==="center"){
-    ball.style.transform="translate(0px,-350px) scale(0.5)";
-  }else{
-    ball.style.transform="translate(180px,-350px) scale(0.5)";
-  }
+  ball.style.transform="translate(-260px,-450px) scale(0.5)";
+}
+else if(side==="center"){
+  ball.style.transform="translate(-20px,-450px) scale(0.5)";
+}
+else{
+  ball.style.transform="translate(180px,-450px) scale(0.5)";
+}
 
   // Goalkeeper movement
   let saveSide;
