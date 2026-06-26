@@ -72,9 +72,15 @@ function shoot(side){
     saveSide = dirs[Math.floor(Math.random()*2)];
   }
 
-  keeper.style.left =
-    saveSide==="left" ? "40px" :
-    saveSide==="center" ? "110px" : "180px";
+  if (saveSide === "left") {
+  keeper.style.transform = "translateX(-140px)";
+}
+else if (saveSide === "center") {
+  keeper.style.transform = "translateX(0)";
+}
+else {
+  keeper.style.transform = "translateX(140px)";
+}
 
   setTimeout(()=>{
 
