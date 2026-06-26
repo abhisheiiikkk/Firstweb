@@ -98,6 +98,7 @@ else {
 
     // Reset ball
     ball.style.transform="translateX(-50%)";
+    keeper.style.transform = "translateX(0)";
 
     if(shots===0){
       setTimeout(()=>{
