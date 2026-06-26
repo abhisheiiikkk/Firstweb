@@ -61,7 +61,7 @@ else if(side==="center"){
   ball.style.transform="translate(-60px,-450px) scale(0.5)";
 }
 else{
-  ball.style.transform="translate(180px,-450px) scale(0.5)";
+  ball.style.transform="translate(230px,-450px) scale(0.5)";
 }
 
   // Goalkeeper movement
