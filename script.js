@@ -75,13 +75,13 @@ else{
   }
 
   if (saveSide === "left") {
-  keeper.style.transform = "translateX(-140px)";
+  keeper.style.transform = "translateX(-300px)";
 }
 else if (saveSide === "center") {
   keeper.style.transform = "translateX(0)";
 }
 else {
-  keeper.style.transform = "translateX(140px)";
+  keeper.style.transform = "translateX(250px)";
 }
 
   setTimeout(()=>{
