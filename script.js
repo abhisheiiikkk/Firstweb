@@ -55,10 +55,10 @@ function shoot(side){
   ball.style.transition = "transform 0.6s ease";
 
   if(side==="left"){
-  ball.style.transform="translate(-320px,-450px) scale(0.5)";
+  ball.style.transform="translate(-420px,-450px) scale(0.5)";
 }
 else if(side==="center"){
-  ball.style.transform="translate(-40px,-450px) scale(0.5)";
+  ball.style.transform="translate(-60px,-450px) scale(0.5)";
 }
 else{
   ball.style.transform="translate(180px,-450px) scale(0.5)";
