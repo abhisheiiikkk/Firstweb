@@ -78,7 +78,7 @@ else{
   keeper.style.transform = "translateX(-300px)";
 }
 else if (saveSide === "center") {
-  keeper.style.transform = "translateX(40)";
+  keeper.style.transform = "translateX(50)";
 }
 else {
   keeper.style.transform = "translateX(300px)";
